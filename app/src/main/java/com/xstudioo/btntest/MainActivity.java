@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button button = (Button) findViewById(R.id.button);
-        
-        
+
+        Button button1 = (Button) findViewById(R.id.button1);
         
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,5 +27,21 @@ public class MainActivity extends AppCompatActivity {
                 
             }
         });
+
+
+    button1.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+            Toast.makeText(MainActivity.this, "Second button", Toast.LENGTH_SHORT).show();
+
+
+
+        }
+    });
+
+
+
+
     }
 }
